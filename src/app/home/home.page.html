@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sky Practice</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/profile">
+        <ion-icon slot="icon-only" name="person" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        <ion-item lines="none" detail button="">
+          <ion-icon name="Home" slot="start" color="primary"></ion-icon>
+          <ion-label>Home del Usuario</ion-label>
+        </ion-item>
+      </ion-title>
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <ion-button [routerLink]="['/instructor']">
+      Instructor
+    </ion-button>
+    <ion-button [routerLink]="['/avion']">
+      Aviones y Simuladores
+    </ion-button>
+  </ion-content>
+</ion-content>
